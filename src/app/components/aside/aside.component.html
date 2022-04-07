@@ -1,0 +1,19 @@
+<div id="aside">
+  <div class="logo">
+      <!-- Name -->
+    <a href="#"><span>{{name}}</span></a>
+  </div>
+  <div class="nav-items">
+      <!-- nav items -->
+    <div class="nav-toggler">
+        <span></span>
+    </div>
+    <ul *ngFor="let item of navItemsObject | keyvalue: keepOrder">
+      <li>
+        <!-- -->
+        <a  class="active text-capitalize" routerLink="/{{item.key}}"  
+          ><i class="fa {{ item.value }}"></i>{{ item.key }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
