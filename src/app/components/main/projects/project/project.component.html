@@ -1,0 +1,60 @@
+<div data-aos="fade-right"
+  *ngIf="project.images && project.images.length > 0"
+  class="caroisel-container"
+>
+  <div class="project-container">
+    <div *ngFor="let image of project.images; let i = index">
+      <div class="outer" *ngIf="!image.type">
+        <video
+          autoplay
+          *ngIf="image.video.type == 'video'"
+          controls
+          [ngClass]="{ 'image-active': selectedIndex == i }"
+        >
+          <source [src]="image.video.videoUrl" type="video/mp4" />
+        </video>
+      </div>
+      <div class="outer" *ngIf="image.type == 'image'">
+        <img
+          class="inner"
+          [src]="image.imageUrl"
+          [alt]="image.imageAlt"
+          [ngClass]="{ 'image-active': selectedIndex == i }"
+        />
+      </div>
+    </div>
+    <div *ngIf="indecators" class="caroisel-dot-container">
+      <span
+        class="dot"
+        *ngFor="let dot of project.images; let i = index"
+        [ngClass]="{ active: selectedIndex === i }"
+        (click)="selectImage(i)"
+      ></span>
+    </div>
+  </div>
+  <!-- Project Details -->
+  <div class="experience-section">
+    <!-- title -->
+    <div class="title">
+      {{ project.title }}
+    </div>
+    <!-- type -->
+    <div class="experienceType">
+      {{ project.experienceType }} 
+    </div>
+
+    <!-- Description -->
+    <div class="description">
+      {{ project.description }}
+    </div>
+    <!-- icons -->
+    <div class="project-icons">
+      <!-- icon1 live link -->
+      <a href="{{project.sourceCodeURL}}/" target="_black"> <i class="icon fa-brands fa-github"></i></a>
+
+      <!-- icon2 github -->
+     <a href="#"><i class="icon fa-solid fa-globe"></i></a> 
+
+    </div>
+  </div>
+</div>

@@ -1,15 +1,33 @@
-<div class="main-container">
+<div class="main-container {{themeModeAdd}}" #main >
      <!-- Aside start-->
      <app-aside></app-aside>
      <!-- Aside end -->
 
      
      <!-- Main Content start -->
-     <div class="main-content">
+     <div class="main-content ">
          <!-- <app-home></app-home> -->
          <router-outlet></router-outlet>
      </div>
      <!-- Main Content end -->
 </div>
+
+<div [ngClass]="(isToggleClicked) ? 'style-switcher open':'style-switcher'">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin" (click)="handleToggler()"></i>
+    </div>
+    <div  class="day-night s-icon "  (click)="handleToggleModes(modeIcon.classList)">
+      <i #modeIcon [ngClass]="main.classList.contains('dark') ? 'fas fa-sun' :'fas fa-moon'"></i>
+    </div>
+    <h4>Theme colors</h4>
+    <div class="colors">
+      <span class="color-1" (click)="setActivityStyle('color-1')"></span>
+      <span class="color-2" (click)="setActivityStyle('color-2')"></span>
+      <span class="color-3" (click)="setActivityStyle('color-3')"></span>
+      <span class="color-4" (click)="setActivityStyle('color-4')"></span>
+      <span class="color-5" (click)="setActivityStyle('color-5')"></span>
+    </div>
+  </div>
+  
 
 

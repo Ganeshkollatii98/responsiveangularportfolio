@@ -1,15 +1,48 @@
 /* Aside */
 #aside{
-    width: 270px;
-    background:var(--bg-black-100);
+    display: none;
+}
+
+
+
+.nav-toggler{
+    display: flex;
+    height: 40px;
+    width: 45px;
+    border:1px solid var(--bg-black-900);
+    cursor: pointer;
     position: fixed;
+    
+    justify-content: center;
+    align-items: center;
+    left:300px;
+    top:20px;
+    border-radius: 5px;
+    background:var(--bg-black-100);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: relative;
+}
+.nav-toggler span::after{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left:0;
+}
+.nav-toggler span::before{
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
     left: 0;
-    top:0;
-    padding: 10px;
-    height: 100%;
-    z-index: 10;
-    
-    
 }
 .nav-items{
     height: 100%;
@@ -21,13 +54,13 @@
     margin-top: 50px;
 }
 #aside .logo{
-   position: absolute;
-   top:50px;
-   left: 50px;
-   padding:3px;
-   font-size: 30px;
-   text-transform: capitalize;
-}
+    position: absolute;
+    top:50px;
+    left: 50px;
+    padding:3px;
+    font-size: 30px;
+    text-transform: capitalize;
+ }
 ul{
     list-style-type: none;
     
@@ -94,42 +127,23 @@ ul li a{
 
 /* Toogle */
 
-.nav-toggler{
-    height: 40px;
-    width: 45px;
-    border:1px solid var(--bg-black-900);
-    cursor: pointer;
-    position: fixed;
-    /* make it as visilble */
-    display: none;
-    justify-content: center;
-    align-items: center;
-    left:300px;
-    top:20px;
-    border-radius: 5px;
-    background:var(--bg-black-100);
+@media only screen and (min-width:768px){
+    #aside{
+        display: block;
+        width: 270px;
+        background:var(--bg-black-100);
+        position: fixed;
+        left: 0;
+        top:0;
+        padding: 10px;
+        height: 100%;
+        z-index: 10;
+    }
+    .nav-toggler{
+        display: none;
+    }
+    
+      
 }
-.nav-toggler span{
-    height: 2px;
-    width: 18px;
-    background: var(--skin-color);
-    position: relative;
-}
-.nav-toggler span::after{
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: var(--skin-color);
-    position: absolute;
-    top: -6px;
-    left:0;
-}
-.nav-toggler span::before{
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: var(--skin-color);
-    position: absolute;
-    top: 6px;
-    left: 0;
-}
+
+/* style switcher */

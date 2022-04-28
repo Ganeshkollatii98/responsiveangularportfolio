@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-bottom: 1rem; */
+  /* align-content: center; */
+  background-color:var(--bg-black-900);
+}
+
+
+.contact-title {
+  margin-top: 3rem;
+  font-family: poppins;
+  font-size: 40px;
+  color: var(--text-black-900);
+}
+.contact-message {
+  color: var(--text-black-900);
+  font-size: 20px;
+  margin-top: 10px;
+}
+form {
+  width: 100%;
+  max-width: 80%;
+  min-width: 50%;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  font-family: "poppins";
+  margin-right: 20px;
+}
+.input-group {
+  margin-bottom: 2.5rem;
+  position: relative;
+  
+}
+input,
+textarea {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  outline: 0;
+  /* border: none; */
+  border: 2px solid var(--text-black-900);
+  /* border-radius: 1.5rem;  */
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--text-black-900);
+  background-color: var(--bg-black-900);
+}
+
+button {
+  color: var(--text-black-900) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--skin-color);
+  padding: 4px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  box-shadow: var(--skin-color) 0px 3px 6px, var(--skin-color) 0px 3px 6px;
+
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+button:hover {
+  background: var(--skin-color);
+  transform: scale(1.2);
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  /* transition: all 0.4s ease 0s; */
+}
+.my-name {
+  font-family: "Clicker Script", cursive;
+  margin: 3px 0;
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: var(--skin-color);
+}
+label {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  cursor: text;
+  font-size: 15px;
+  color: var(--skin-color);
+  transition: 0.3s;
+}
+label i {
+  color: var(--skin-color);
+  padding: 0.3em 0.2em;
+}
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+  font-weight: bold;
+}

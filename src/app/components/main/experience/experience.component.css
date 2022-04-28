@@ -1,0 +1,127 @@
+.timeline-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-bottom: 6rem;
+}
+
+
+.timeline{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+.timeline ul {
+    list-style: none;
+}
+.timeline ul li{
+    padding: 20px;
+    /* #28282B */
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    border-radius: 10px ;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+}
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+.timeline-content .date,
+.timeline-content .location,
+.timeline-content .degree{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    
+}
+
+.timeline-content h1{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.timeline-content .description{
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media only screen and (min-width:768px) {
+    .timeline-container{
+        margin-top: 2rem;
+        
+    }
+    
+     .timeline::before{
+         content: '';
+         position: absolute;
+         width: 2px;
+         height: 100%;
+         background:var(--text-black-900);
+         left: 50%;
+         transform: translateX(-50%);
+     }
+    
+    .timeline ul li{
+         width: 50%;
+         margin-bottom: 50px;
+         position: relative;
+     }
+     .timeline ul li:nth-child(odd){
+            float: left;
+            clear: right;
+            transform: translateX(-40px);
+        border-radius: 10px 0px 10px 10px;
+
+     }
+     .timeline ul li:nth-child(even){
+        float:right;
+        clear: left;
+        
+        transform: translateX(30px);
+        border-radius: 0px 10px 10px 10px;
+
+    }
+    .timeline ul li::after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top:0;
+        background:var(--text-black-700);
+    }
+    .timeline ul li:nth-child(odd)::after{
+        right: -23px;
+        transform: translate(50%,-50%);
+        transition: all .2s;
+    }
+    .timeline ul li:nth-child(even)::after{
+         left:-46px;
+         transition: all .2s;
+         transform: translate(-50%,-50%);
+    }
+    .timeline ul li:hover::after{
+        background-color: var(--skin-color);
+    }
+    
+    .timeline-content .date{
+        color: var(--text-black-700);
+        position: absolute;
+        top:-40px;
+    }
+    .timeline-content .date:hover{
+        color: var(--skin-color);
+    }
+    
+    
+    
+}

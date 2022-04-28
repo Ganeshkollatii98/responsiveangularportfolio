@@ -9,6 +9,11 @@ import { AboutComponent } from './components/main/about/about.component';
 import { ContactComponent } from './components/main/contact/contact.component';
 import { ProjectsComponent } from './components/main/projects/projects.component';
 import { ExperienceComponent } from './components/main/experience/experience.component';
+import { ProjectComponent } from './components/main/projects/project/project.component';
+import { FooterComponent } from './components/main/footer/footer.component';
+
+
+// import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,10 @@ import { ExperienceComponent } from './components/main/experience/experience.com
     ContactComponent,
     ProjectsComponent,
     ExperienceComponent,
+    ProjectComponent,
+    FooterComponent,
+    
+    // ProjectComponent,
     ],
   imports: [
     BrowserModule,

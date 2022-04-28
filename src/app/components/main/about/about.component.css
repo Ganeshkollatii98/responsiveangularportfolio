@@ -1,29 +1,8 @@
-.about .container{
+/* .about .container{
     padding-top: 60px;
     padding-bottom: 70px;
-}
+} */
 
-.section-title{
-    flex: 0 0 100%;
-    max-width: 100%;
-    /* background-color: red; */
-}
-.section-title h2{
-    font-size: 40px;
-    color: var(--text-black-900);
-    font-weight: 700;
-    position: relative;
-}
-.section-title h2::before{
-   content:"";
-   height: 4px;
-   width: 100px;
-   background-color: var(--skin-color);
-   position: absolute;
-   top: 100%;
-   left: 2.5rem;
-   margin-top: 5px;
-}
 /* .section-title h2::after{
     content:"";
     height: 4px;
@@ -57,7 +36,10 @@
     font-size: 30px;
     margin: 15px 0;
  }
- .typing{
+ .aboutContent,.skill-sub_title{
+     color: var(--text-black-900);
+ }
+ .typing,.name{
      color:var(--skin-color);
  }
 
@@ -119,6 +101,15 @@
      text-transform: uppercase;
      letter-spacing: .1rem;
      margin-bottom: 20px;
+ }
+
+ @media only screen and (max-width: 991px) {
+    .skill-images div{
+        margin:5px 5px 10px 12px;
+    }
+    .section{
+        margin-bottom: 5rem;
+    }
  }
  
  
