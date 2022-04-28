@@ -1,36 +1,36 @@
 <div class="contact section">
   <div class="container">
-    <h2 class="contact-title">
+    <h2 data-aos="fade-up" class="contact-title">
       {{ title }}
     </h2>
     <!-- msg -->
-    <p class="contact-message">
+    <p data-aos="fade-up" class="contact-message">
       {{ message }}
     </p>
 
     <!-- block -->
 
-    <form action="post">
-      <div class="input-group">
+    <form data-aos="fade-right"  action="post">
+      <div data-aos="fade-right" class="input-group">
         <input required type="text" name="name" id="" />
         <label for="name"><i class="fa-solid fa-user"></i>Your Name</label>
       </div>
-      <div class="input-group">
+      <div data-aos="fade-right" class="input-group">
         <input  type="email" name="email" id="" required/>
         <label for="email"><i class="fa-solid fa-at"></i>Email</label>
       </div>
-      <div class="input-group">
+      <div data-aos="fade-right" class="input-group">
         <input required type="text" name="subject" id="" />
         <label for="subject"
           ><i class="fa-solid fa-address-card"></i>Subject</label
         >
       </div>
-      <div class="input-group">
+      <div data-aos="fade-right" class="input-group">
         <textarea required name="message" id="" cols="10" rows="5"></textarea>
         <label for="message"><i class="fa-solid fa-message"></i>Message</label>
       </div>
-      <button type="submit">SUBMIT</button>
+      <button data-aos="fade-right" type="submit">SUBMIT</button>
     </form>
   </div>
-  <app-footer></app-footer>
+  <app-footer ></app-footer>
 </div>

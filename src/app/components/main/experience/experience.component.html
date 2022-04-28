@@ -10,7 +10,7 @@
           <div class="timeline-container">
             <div class="timeline">
                 <ul>
-                    <li *ngFor="let timeline of timeLineElements">
+                    <li data-aos="fade-up" *ngFor="let timeline of timeLineElements">
                         <div class="timeline-content">
                             <!-- role -->
                           <h1 class="role"><span>{{timeline.title}}  {{timeline.company ? 'at '+ timeline.company:''}}</span></h1>

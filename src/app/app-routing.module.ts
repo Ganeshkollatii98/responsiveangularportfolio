@@ -13,10 +13,6 @@ const routes: Routes = [
    {path:"experience",component:ExperienceComponent},
    {path:"projects",component:ProjectsComponent},
    {path:"contact",component:ContactComponent}
-   
-   
-
-   
 ];
 
 @NgModule({
