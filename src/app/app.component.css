@@ -88,3 +88,10 @@ div.dark{
     
 }
 
+@media only screen and (max-width:1199px) {
+    .section{
+         left: 290px;
+    }
+}
+
+

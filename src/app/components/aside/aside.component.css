@@ -8,10 +8,11 @@
     top:0;
     height: 100%;
     z-index: 10;
+    transition: all 0.3s ease;
 }
-.nav-toggler{
-    display: none;
-}
+/* .nav-toggler{
+    display: flex;
+} */
 
 
 .nav-items{
@@ -96,8 +97,14 @@ ul li a{
 
 /* Toogle */
 
-@media only screen and (max-width:1099px){
-    
+
+@media only screen and (max-width:1199px){
+    .nav-toggler span{
+        height: 2px;
+        width: 18px;
+        background: var(--skin-color);
+        position: relative;
+    }
     .nav-toggler{
         display: flex;
         height: 40px;
@@ -105,20 +112,20 @@ ul li a{
         border:1px solid var(--bg-black-900);
         cursor: pointer;
         position: fixed;
-        
         justify-content: center;
         align-items: center;
-        left:300px;
+        left:30px;
         top:20px;
+        z-index: 3;
         border-radius: 5px;
         background:var(--bg-black-100);
+        transition: all 0.3s ease;
     }
-    .nav-toggler span{
-        height: 2px;
-        width: 18px;
-        background: var(--skin-color);
-        position: relative;
+    
+    .nav-toggler.open span{
+        background: transparent;
     }
+    
     .nav-toggler span::after{
         content: '';
         height: 2px;
@@ -127,6 +134,10 @@ ul li a{
         position: absolute;
         top: -6px;
         left:0;
+    }
+    .nav-toggler.open span::after{
+        transform: rotate(-45deg);
+         top:0;
     }
     .nav-toggler span::before{
         content: '';
@@ -137,19 +148,26 @@ ul li a{
         top: 6px;
         left: 0;
     }
-     
-}
-@media (max-width:1199px)
-{
+    .nav-toggler.open span::before{
+        transform: rotate(45deg);
+         top:0;
+    }
     #aside{
         left:-270px;
     }
-    #aside .nav-toggler{
-        display: flex;
-    }
-    .section{
+    
+    #aside.open{
         left:0;
+        z-index: 2;
     }
-}
+    .nav-toggler.open{
+        left: 300px;
+    }
+    
+    
+    
+}  
+    
+
 
 /* style switcher */

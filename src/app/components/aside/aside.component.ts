@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RootDataService } from 'src/app/services/root-data.service';
 import { NgModule } from '@angular/core';
+import { AsideHelperService } from 'src/app/services/aside/aside-helper.service';
 @Component({
   selector: 'app-aside',
   templateUrl: './aside.component.html',
@@ -14,7 +15,7 @@ export class AsideComponent implements OnInit {
   skinValue:any;
   isNavActive:any=false;
   selectedItem:any;
-  sideNavOpen:any;
+  sideNavOpen:any='';
   colors:any={
      'color-1':"#ec1839",
      'color-2':"#fa5b0f",
@@ -22,7 +23,7 @@ export class AsideComponent implements OnInit {
      'color-4':"#1854b4",
      'color-5':"#f021b2"
   }
-  constructor( private rootService:RootDataService) { 
+  constructor( private rootService:RootDataService,private asideHelperService:AsideHelperService) { 
     //  localStorage.setItem('skin-color','#ec1839');
      
      
@@ -42,7 +43,8 @@ export class AsideComponent implements OnInit {
    }
   
    handleToggle(){
-       this.sideNavOpen='open';
+       this.asideHelperService.handleAsideNavToggleBar(this.sideNavOpen);
+       this.sideNavOpen=this.asideHelperService.sideNavBarStatus;   
    }
   // Handle this
   // window.addEventListener("scroll", () => {

@@ -18,7 +18,7 @@
 body {
   line-height: 1.5;
   font-size: 16px;
-  position: relative;
+  /* position: relative; */
   
 }
 * {
@@ -39,6 +39,7 @@ body {
 
 .section {
   background: var(--bg-black-900);
+  /* height: 100vh; */
   min-height: 100vh;
   display: block;
   position: absolute;
@@ -49,6 +50,7 @@ body {
   overflow-y: visible;
   overflow-x: hidden;
   z-index: 1;
+  transition: all 0.3s ease;
   /* right: 0;
   bottom: 0; */
   /* position: fixed; */
@@ -61,11 +63,16 @@ body {
   overflow-y: visible;
   overflow-x: hidden; */
 }
-.section .active{
+/* .section .active{
   z-index: 2;
   opacity: 1;
-}
+} */
 
+@media only screen and (max-width:1199px) {
+     .section{
+         left:0;
+     }
+}
 @keyframes SlideSection {
   0%{
     transform:translateX(100%);
@@ -141,6 +148,15 @@ body {
 }
 ::-webkit-scrollbar-track{
   background-color: var(--text-black-900);
+}
+
+@media only screen and (max-width:1199px){
+    .section.open{
+       left:270px;
+    }
+    .section .container{
+      padding-top: 30px;
+    }
 }
 
 

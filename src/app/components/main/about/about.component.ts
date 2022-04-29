@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RootDataService } from 'src/app/services/root-data.service';
 import * as AOS from 'aos';
+import { AsideHelperService } from 'src/app/services/aside/aside-helper.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -12,7 +13,8 @@ export class AboutComponent implements OnInit {
   personalInfo!: any;
   skillsList!: any;
   skillTitle!: any;
-  constructor(private rootService: RootDataService) {
+  isSectionOpenWhenToggleClciked:any='';
+  constructor(private rootService: RootDataService,private asideHelperService:AsideHelperService) {
     AOS.init();
   }
   keepOrder(a: any, b: any) {
@@ -23,5 +25,9 @@ export class AboutComponent implements OnInit {
     this.aboutTitle = this.rootService.data.about.title;
     this.personalInfo = this.rootService.data.about.personalInfo;
     this.skillsList = this.rootService.data.about.skills;
+  }
+  ngDoCheck(){
+    this.isSectionOpenWhenToggleClciked=this.asideHelperService.sideNavBarStatus;
+
   }
 }
