@@ -319,7 +319,14 @@ export class RootDataService {
     contact:{
       title:"Coffee With Me.",
       message:"I am always excited to work on some awesome projects, message me and let's discuss over coffee."
+    },
+    footer:{
+        name:"Ganesh Kollati",
+        made_msg:"Made with ❤️ In India",
+        socialMediaTitle:"You can find me every where",
+        image:"../../../../assets/foot.jpg"
     }
+    
   };
   constructor() {}
 }

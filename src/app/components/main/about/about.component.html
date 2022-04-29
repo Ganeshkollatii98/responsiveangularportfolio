@@ -20,7 +20,12 @@
               
             
             <p data-aos="fade-right" class="aboutContent">{{ aboutContent }}</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1-jqg1AuqDUW5Gua7NtoD_b03jVXnFFQ2/view?usp=drivesdk" >
+              <button download data-aos="fade-right" class="btn" ><i class="fa fa-download"></i> Download Resume</button>
+            </a>
+            
           </div>
+          
         </div>
         <div class="row">
           <!-- <div class="personal-info">
@@ -54,7 +59,7 @@
           <div class="row">
             <div class="skills">
               <div class="sub-skills" *ngFor="let skillObject of skillsList">
-                <div class="skill-sub_title">
+                <div data-aos="fade-right"  class="skill-sub_title">
                   {{ skillObject.skillTitle }}
                 </div>
                 <div  class="skill-images">

@@ -163,6 +163,9 @@ ul li a{
     .nav-toggler.open{
         left: 300px;
     }
+    .nav-items{
+        /* margin-top: -6rem; */
+    }
     
     
     

@@ -1,16 +1,20 @@
 
   <!-- footer block -->
+  <!-- footerName: any;
+  footerMadeMsg: any;
+  footerSocialMediaMsg:any;
+  footerImage:any; -->
   <div class="footer" data-aos="fade-right">
     <div class="copyrights">
         <p>No <i class="fa fa-copyright"></i> Copyright Issues.</p>
         <p class="madeby">Feel free to copy. If you need any help, ping me !</p>
     </div>
     <div class="logos">
-      <h3 class="my-name">Ganesh Kollati</h3>
-      <p class="madeby">Made with ❤️ In India</p>
+      <h3 class="my-name">{{footerName}}</h3>
+      <p class="madeby">{{footerMadeMsg}}</p>
     </div>
     <div class="media-icons">
-      <p class="madeby">you can find me every where</p>
+      <p class="madeby">{{footerSocialMediaMsg}}</p>
       <div>
         <div>
           <a href="" class="sm-link">
@@ -30,6 +34,6 @@
     </div>
   </div>
   <div class="footer-image" data-aos="fade-right">
-    <img src="../../../../assets/foot.jpg" alt="">
+    <img src={{footerImage}} alt="">
   </div>
 
