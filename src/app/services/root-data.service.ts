@@ -174,6 +174,73 @@ export class RootDataService {
             }
           },
           ],
+        },
+        {
+          title:"Pizza Man",
+          experienceType:"Personal Project",
+          description:"Pizza Man is always open to serve you. Order all your favorite pizzas from the comfort of your home, and we will ensure free delivery for all orders. The tech stack consisted of Angular,Nodejs Express,Sequlize.",
+          sourceCodeURL:"https://github.com/Ganeshkollatii98/MyAnatomy-Training-Project/tree/master/Pizza-Man",
+          liveURL:"",
+          images:[
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/Home.PNG",
+              imageAlt:"Home Page"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/loginPage.PNG",
+              imageAlt:"Login Page"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/RigisterPage.PNG",
+              imageAlt:"Registration Page"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/menu.PNG",
+              imageAlt:"Menu Page"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/menuFilter.PNG",
+              imageAlt:"Menu Page Filters"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/cartEmpty.PNG",
+              imageAlt:"Cart Page Empty"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/cartFilled.PNG",
+              imageAlt:"Cart Page Filled"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/CheckOutBTN.PNG",
+              imageAlt:"Checkout Page"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/successPage.PNG",
+              imageAlt:"Success Page"
+            },
+            {
+              type:"image",
+              imageUrl:"../../../../assets/projects/pizzaman/ordersList.PNG",
+              imageAlt:"Orders Page"
+            },
+            {
+              video:
+              {
+              type:"video",
+              videoUrl:"../../../../assets/projects/pizzaman/sortVideo.mp4",
+              videoAlt:"Pizza Man Short Video"
+            }
+          },
+          ],
         }
         ,
         {
