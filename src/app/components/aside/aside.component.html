@@ -1,5 +1,5 @@
 
-<div id="aside">
+<div id="aside" class="{{sideNavOpen}}">
   <div class="logo">
     <!-- Name -->
     <a href="#"
@@ -8,10 +8,11 @@
   </div>
   <div class="nav-items">
     <!-- nav items -->
-    <ul *ngFor="let item of navItemsObject | keyvalue: keepOrder">
-      <li>
+    <ul >
+      <li  
+      (click)="listClick($event, item)" *ngFor="let item of navItemsObject  | keyvalue: keepOrder">
         <!-- -->
-        <a class="active text-capitalize" routerLink="/{{ item.key }}"
+        <a [ngClass]="{'active': selectedItem == item}" class="text-capitalize" routerLink="/{{ item.key }}"
           ><i class="fa {{ item.value }}"></i>{{ item.key }}</a
         >
       </li>
@@ -19,7 +20,7 @@
   </div>
   <!-- sp -->
 </div>
-<div class="nav-toggler">
+<div class="nav-toggler" (click)="handleToggle()">
   <span></span>
 </div>
 

@@ -11,6 +11,7 @@ import { ProjectsComponent } from './components/main/projects/projects.component
 import { ExperienceComponent } from './components/main/experience/experience.component';
 import { ProjectComponent } from './components/main/projects/project/project.component';
 import { FooterComponent } from './components/main/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 // import { ProjectComponent } from './project/project.component';
@@ -31,7 +32,8 @@ import { FooterComponent } from './components/main/footer/footer.component';
     ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

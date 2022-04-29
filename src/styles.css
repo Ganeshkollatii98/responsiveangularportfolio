@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;200;300;400;500;600&display=swap");
-
+/* <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script> */
 :root {
   --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff;
@@ -16,38 +16,63 @@
   --text-gray-900:gray;
 }
 body {
-  margin: 0;
-  padding: 0;
   line-height: 1.5;
   font-size: 16px;
-  font-family: "poppins" sans-serif;
+  position: relative;
+  
 }
 * {
   margin: 0;
   padding: 0;
   outline: none;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   text-decoration: none;
+  font-family: "poppins" sans-serif;
 }
+
+
 
 ::after,
 ::before {
   box-sizing: border-box;
 }
 
-section {
+.section {
   background: var(--bg-black-900);
-  width: 100%;
-  /* height: 100vh; */
   min-height: 100vh;
   display: block;
-  /* position: fixed; */
+  position: absolute;
   left: 270px;
-  padding: 0 30px;
-  /* top: 0;
+  top: 0;
   right: 0;
-  z-index: 0; */
+  padding: 0 30px;
+  overflow-y: visible;
+  overflow-x: hidden;
+  z-index: 1;
+  /* right: 0;
+  bottom: 0; */
+  /* position: fixed; */
+  /* left: 270px;
+  padding: 0 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow-y: visible;
+  overflow-x: hidden; */
+}
+.section .active{
+  z-index: 2;
   opacity: 1;
+}
+
+@keyframes SlideSection {
+  0%{
+    transform:translateX(100%);
+  }
+  100%{
+     transform: translateX(0%);
+  }
 }
 .section-title{
   
@@ -117,3 +142,5 @@ section {
 ::-webkit-scrollbar-track{
   background-color: var(--text-black-900);
 }
+
+

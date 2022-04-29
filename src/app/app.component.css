@@ -6,12 +6,7 @@ div.dark{
     --text-black-700: #e9e9e9;
 }
 
-@media only screen and (min-width:768px) {
-    .main-content{
-        padding-left: 270px;
-        width: 100%;
-    }
-}
+
 
 /* Style Switcher */
 .style-switcher{

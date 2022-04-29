@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RootDataService } from 'src/app/services/root-data.service';
-
+import { NgModule } from '@angular/core';
 @Component({
   selector: 'app-aside',
   templateUrl: './aside.component.html',
@@ -12,6 +12,9 @@ export class AsideComponent implements OnInit {
   isToggleClicked=false;
   skinColor:any;
   skinValue:any;
+  isNavActive:any=false;
+  selectedItem:any;
+  sideNavOpen:any;
   colors:any={
      'color-1':"#ec1839",
      'color-2':"#fa5b0f",
@@ -30,11 +33,17 @@ export class AsideComponent implements OnInit {
   ngOnInit(): void {
     this.navItemsObject=this.rootService.data.navBarTitles;
     this.name=this.rootService.data.name;
-    
-    
-    
+    console.log(this.navItemsObject);
   }
+  listClick(event:any, newValue:any) {
+    console.log(newValue);
+    this.selectedItem = newValue;  // don't forget to update the model here
+    // ... do other stuff here ...
+   }
   
+   handleToggle(){
+       this.sideNavOpen='open';
+   }
   // Handle this
   // window.addEventListener("scroll", () => {
   //   if(document.querySelector(".style-switcher").classList.contains ("open"))

@@ -1,36 +1,38 @@
-<div class="contact section">
-  <div class="container">
-    <h2 data-aos="fade-up" class="contact-title">
-      {{ title }}
-    </h2>
-    <!-- msg -->
-    <p data-aos="fade-up" class="contact-message">
-      {{ message }}
-    </p>
-
-    <!-- block -->
-
-    <form data-aos="fade-right"  action="post">
-      <div data-aos="fade-right" class="input-group">
-        <input required type="text" name="name" id="" />
-        <label for="name"><i class="fa-solid fa-user"></i>Your Name</label>
-      </div>
-      <div data-aos="fade-right" class="input-group">
-        <input  type="email" name="email" id="" required/>
-        <label for="email"><i class="fa-solid fa-at"></i>Email</label>
-      </div>
-      <div data-aos="fade-right" class="input-group">
-        <input required type="text" name="subject" id="" />
-        <label for="subject"
-          ><i class="fa-solid fa-address-card"></i>Subject</label
-        >
-      </div>
-      <div data-aos="fade-right" class="input-group">
-        <textarea required name="message" id="" cols="10" rows="5"></textarea>
-        <label for="message"><i class="fa-solid fa-message"></i>Message</label>
-      </div>
-      <button data-aos="fade-right" type="submit">SUBMIT</button>
-    </form>
+<section class="section active">
+  <div class="contact">
+    <div class="container">
+      <h2 data-aos="fade-up" class="contact-title">
+        {{ title }}
+      </h2>
+      <!-- msg -->
+      <p data-aos="fade-up" class="contact-message">
+        {{ message }}
+      </p>
+  
+      <!-- block -->
+  
+      <form data-aos="fade-right"  action="post">
+        <div data-aos="fade-right" class="input-group">
+          <input required type="text" name="name" id="" />
+          <label for="name"><i class="fa-solid fa-user"></i>Your Name</label>
+        </div>
+        <div data-aos="fade-right" class="input-group">
+          <input  type="email" name="email" id="" required/>
+          <label for="email"><i class="fa-solid fa-at"></i>Email</label>
+        </div>
+        <div data-aos="fade-right" class="input-group">
+          <input required type="text" name="subject" id="" />
+          <label for="subject"
+            ><i class="fa-solid fa-address-card"></i>Subject</label
+          >
+        </div>
+        <div data-aos="fade-right" class="input-group">
+          <textarea required name="message" id="" cols="10" rows="5"></textarea>
+          <label for="message"><i class="fa-solid fa-message"></i>Message</label>
+        </div>
+        <button data-aos="fade-right" type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <app-footer ></app-footer>
   </div>
-  <app-footer ></app-footer>
-</div>
+</section>
