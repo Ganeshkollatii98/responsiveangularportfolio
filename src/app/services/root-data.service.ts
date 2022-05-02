@@ -13,6 +13,7 @@ export class RootDataService {
       projects: 'fa fa-diagram-project',
       contact: 'fa fa-address-card',
     },
+    
     profiles: [
       '../../../../assets/profiles/linkedin.svg',
       '../../../../assets/profiles/github.svg',
