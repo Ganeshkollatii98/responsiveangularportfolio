@@ -64,7 +64,7 @@ export class RootDataService {
           title: "Software Engineer ",
           location: "Hyderabad",
           description:
-            `Worked on two projects 1) Pizza ordering web app and Tech Stack is Frontend:- AngularJS, Bootstrap and Backend:- GraphQL, PostgreSQL, Sequelize. 
+            `: Worked on two projects 1) Pizza ordering web app and Tech Stack is Frontend:- AngularJS, Bootstrap and Backend:- GraphQL, PostgreSQL, Sequelize. 
             2. Banking application all crud operations Tech Stack is Front End : AngularJS,Bootstrap`,
           
           date: "January 2022 - present",
@@ -77,7 +77,7 @@ export class RootDataService {
           title: "System Engineer",
           location: "Hyderabad",
           description:
-            "Worked on front end application Stack :- HTML, css, javascript",
+            ": Worked on front end application Stack :- HTML, css, javascript",
           date: "November 2020 - December 2021",
           icon: "laptop",
           type:"Work"
@@ -89,7 +89,7 @@ export class RootDataService {
           location: "Gwalior, Madya Pradesh",
           degree:"Bachelors of computer science engineering",
           description:
-        "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+        "",
           date: "2016 - 2020 Passed Out",
           icon: "building-columns",
           type:"University"
@@ -101,10 +101,22 @@ export class RootDataService {
           degree:"Mathematics and physics,Chemistry",
           
           description:
-            "Highschool - ",
+            "",
           date: "2014 - 2016",
           icon: "school",
           type:"High School"
+        },
+        {
+          id: 5,
+          title: "St Mary's English Medium School",
+          location: "Bhimavaram, Andhra Pradesh",
+          degree:"Schooling",
+          
+          description:
+            "",
+          date: "2013 - 2014",
+          icon: "school",
+          type:"School"
         },
       ]
       
