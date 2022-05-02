@@ -11,14 +11,18 @@ export class FooterComponent implements OnInit {
   footerMadeMsg: any;
   footerSocialMediaMsg:any;
   footerImage:any;
-  constructor(private rootDateSerivce: RootDataService) {
+  linkedInUrl!:any;
+  githubUrl!:any;
+  constructor(private rootService: RootDataService) {
     AOS.init();
   }
 
   ngOnInit(): void {
-      this.footerName=this.rootDateSerivce.data.footer.name;
-      this.footerMadeMsg=this.rootDateSerivce.data.footer.made_msg;
-      this.footerImage=this.rootDateSerivce.data.footer.image;
-      this.footerSocialMediaMsg=this.rootDateSerivce.data.footer.socialMediaTitle;
+      this.footerName=this.rootService.data.footer.name;
+      this.footerMadeMsg=this.rootService.data.footer.made_msg;
+      this.footerImage=this.rootService.data.footer.image;
+      this.footerSocialMediaMsg=this.rootService.data.footer.socialMediaTitle;
+      this.linkedInUrl=this.rootService.data.getInTouchMediaLinks.linkedIn;
+    this.githubUrl=this.rootService.data.getInTouchMediaLinks.github;
   }
 }

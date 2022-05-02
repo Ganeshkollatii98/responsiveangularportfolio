@@ -13,7 +13,10 @@ export class RootDataService {
       projects: 'fa fa-diagram-project',
       contact: 'fa fa-address-card',
     },
-    
+    getInTouchMediaLinks:{
+       linkedIn:'https://www.linkedin.com/in/ganesh-kollati-2b238818b/',
+       github:'https://github.com/GaneshKollatii98'
+    },
     profiles: [
       '../../../../assets/profiles/linkedin.svg',
       '../../../../assets/profiles/github.svg',

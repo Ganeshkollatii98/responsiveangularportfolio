@@ -11,6 +11,7 @@ export class ContactComponent implements OnInit {
   title:string='';
   message:string='';
   isSectionOpenWhenToggleClciked:any='';
+  
   constructor(private rootService:RootDataService,private asideHelperService:AsideHelperService) {
     AOS.init();
    }
@@ -18,6 +19,7 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
     this.title=this.rootService.data.contact.title;
     this.message=this.rootService.data.contact.message;
+    
   }
   ngDoCheck(){
       this.isSectionOpenWhenToggleClciked=this.asideHelperService.sideNavBarStatus;
