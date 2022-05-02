@@ -1,36 +1,53 @@
-<section class="experience section active {{isSectionOpenWhenToggleClciked}}">
-    <div class="container ">
-        <div class="row">
-          <div class="section-title">
-            <h2 class="">
-                {{title}}
-            </h2>
-          </div>
-          <!-- TimeLine -->
-          <div class="timeline-container">
-            <div class="timeline">
-                <ul>
-                    <li data-aos="fade-up" *ngFor="let timeline of timeLineElements">
-                        <div class="timeline-content">
-                            <!-- role -->
-                          <h1 class="role"><span>{{timeline.title}}  {{timeline.company ? 'at '+ timeline.company:''}}</span></h1>
-                          <!-- Location -->
-                          <p class="location" ><span> {{timeline.location}}</span></p>
+<section class="experience section active {{ isSectionOpenWhenToggleClciked }}">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 class="">
+          {{ title }}
+        </h2>
+      </div>
+      <!-- TimeLine -->
+      <div class="timeline-container">
+        <div class="timeline">
+          <ul>
+            <li data-aos="fade-up" *ngFor="let timeline of timeLineElements">
+              <div class="timeline-content">
+                <!-- role -->
+                <!-- ToolTip Start -->
+                <div class="wrapper">
+                  <i
+                    id="experience-icon"
+                    class="fa-solid fa-{{ timeline.icon }}"
+                  ></i>
+                  <h1 class="role">
+                    <span
+                      >{{ timeline.title }}
+                      {{
+                        timeline.company ? "at " + timeline.company : ""
+                      }}</span
+                    >
+                  </h1>
+                  <div class="tooltip">{{timeline.type}}</div>
+                </div>
+                <!-- ToolTip End -->
 
-                          <p class="degree" *ngIf="timeline.degree"><span> {{timeline.degree}}</span></p>
-                          <!-- Description -->
-                          <p class="description">: {{timeline.description}}</p>
-                          <!-- date -->
-                          <p class="date">{{timeline.date}}</p>
-  
-                        </div>
-                    </li>
-                </ul>
-            </div>
-          </div>
-          
+                <!-- Location -->
+                <p class="location">
+                  <span> {{ timeline.location }}</span>
+                </p>
+
+                <p class="degree" *ngIf="timeline.degree">
+                  <span> {{ timeline.degree }}</span>
+                </p>
+                <!-- Description -->
+                <p class="description">: {{ timeline.description }}</p>
+                <!-- date -->
+                <p class="date">{{ timeline.date }}</p>
+              </div>
+            </li>
+          </ul>
         </div>
-         
-    </div>  
-    
+      </div>
+    </div>
+  </div>
 </section>

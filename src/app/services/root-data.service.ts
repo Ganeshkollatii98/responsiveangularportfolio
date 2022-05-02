@@ -68,7 +68,8 @@ export class RootDataService {
             2. Banking application all crud operations Tech Stack is Front End : AngularJS,Bootstrap`,
           
           date: "January 2022 - present",
-          icon: "work",
+          icon: "laptop",
+          type:"Work"
         },
         {
           id: 2,
@@ -77,9 +78,10 @@ export class RootDataService {
           location: "Hyderabad",
           description:
             "Worked on front end application Stack :- HTML, css, javascript",
-          
           date: "November 2020 - December 2021",
-          icon: "work",
+          icon: "laptop",
+          type:"Work"
+          
         },
         {
           id: 3,
@@ -88,19 +90,21 @@ export class RootDataService {
           degree:"Bachelors of computer science engineering",
           description:
         "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-          date: "2016 - 2020",
-          icon: "school",
+          date: "2016 - 2020 Passed Out",
+          icon: "building-columns",
+          type:"University"
         },
         {
           id: 4,
-          title: "Marble Hills Grammar School",
-          location: "Dragontail, Ascana",
-          degree:"Bachelors of computer science engineering",
+          title: "Narayana Juniour Collage",
+          location: "Bhimavaram, Andhra Pradesh",
+          degree:"Mathematics and physics,Chemistry",
           
           description:
-            "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+            "Highschool - ",
           date: "2014 - 2016",
           icon: "school",
+          type:"High School"
         },
       ]
       
@@ -174,213 +178,8 @@ export class RootDataService {
             }
           },
           ],
-        },
-        {
-          title:"Pizza Man",
-          experienceType:"Personal Project",
-          description:"Pizza Man is always open to serve you. Order all your favorite pizzas from the comfort of your home, and we will ensure free delivery for all orders. The tech stack consisted of Angular,Nodejs Express,Sequlize.",
-          sourceCodeURL:"https://github.com/Ganeshkollatii98/MyAnatomy-Training-Project/tree/master/Pizza-Man",
-          liveURL:"",
-          images:[
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/Home.PNG",
-              imageAlt:"Home Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/loginPage.PNG",
-              imageAlt:"Login Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/RigisterPage.PNG",
-              imageAlt:"Registration Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/menu.PNG",
-              imageAlt:"Menu Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/menuFilter.PNG",
-              imageAlt:"Menu Page Filters"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/cartEmpty.PNG",
-              imageAlt:"Cart Page Empty"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/cartFilled.PNG",
-              imageAlt:"Cart Page Filled"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/CheckOutBTN.PNG",
-              imageAlt:"Checkout Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/successPage.PNG",
-              imageAlt:"Success Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/ordersList.PNG",
-              imageAlt:"Orders Page"
-            },
-            {
-              video:
-              {
-              type:"video",
-              videoUrl:"../../../../assets/projects/pizzaman/sortVideo.mp4",
-              videoAlt:"Pizza Man Short Video"
-            }
-          },
-          ],
         }
-        ,
-        {
-          title:"Pizza Man",
-          experienceType:"Personal Project",
-          description:"Pizza Man is always open to serve you. Order all your favorite pizzas from the comfort of your home, and we will ensure free delivery for all orders. The tech stack consisted of Angular,Nodejs Express,Sequlize.",
-          sourceCodeURL:"https://github.com/Ganeshkollatii98/MyAnatomy-Training-Project/tree/master/Pizza-Man",
-          liveURL:"",
-          images:[
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/Home.PNG",
-              imageAlt:"Home Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/loginPage.PNG",
-              imageAlt:"Login Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/RigisterPage.PNG",
-              imageAlt:"Registration Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/menu.PNG",
-              imageAlt:"Menu Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/menuFilter.PNG",
-              imageAlt:"Menu Page Filters"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/cartEmpty.PNG",
-              imageAlt:"Cart Page Empty"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/cartFilled.PNG",
-              imageAlt:"Cart Page Filled"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/CheckOutBTN.PNG",
-              imageAlt:"Checkout Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/successPage.PNG",
-              imageAlt:"Success Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/ordersList.PNG",
-              imageAlt:"Orders Page"
-            },
-            {
-              video:
-              {
-              type:"video",
-              videoUrl:"../../../../assets/projects/pizzaman/sortVideo.mp4",
-              videoAlt:"Pizza Man Short Video"
-            }
-          },
-          ],
-        }
-        ,
-        {
-          title:"Pizza Man",
-          experienceType:"Personal Project",
-          description:"Pizza Man is always open to serve you. Order all your favorite pizzas from the comfort of your home, and we will ensure free delivery for all orders. The tech stack consisted of Angular,Nodejs Express,Sequlize.",
-          sourceCodeURL:"https://github.com/Ganeshkollatii98/MyAnatomy-Training-Project/tree/master/Pizza-Man",
-          liveURL:"",
-          images:[
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/Home.PNG",
-              imageAlt:"Home Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/loginPage.PNG",
-              imageAlt:"Login Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/RigisterPage.PNG",
-              imageAlt:"Registration Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/menu.PNG",
-              imageAlt:"Menu Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/menuFilter.PNG",
-              imageAlt:"Menu Page Filters"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/cartEmpty.PNG",
-              imageAlt:"Cart Page Empty"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/cartFilled.PNG",
-              imageAlt:"Cart Page Filled"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/CheckOutBTN.PNG",
-              imageAlt:"Checkout Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/successPage.PNG",
-              imageAlt:"Success Page"
-            },
-            {
-              type:"image",
-              imageUrl:"../../../../assets/projects/pizzaman/ordersList.PNG",
-              imageAlt:"Orders Page"
-            },
-            {
-              video:
-              {
-              type:"video",
-              videoUrl:"../../../../assets/projects/pizzaman/sortVideo.mp4",
-              videoAlt:"Pizza Man Short Video"
-            }
-          },
-          ],
-        }
-        
-        
-        
+        // Add New Projects here        
       ]
     },
     contact:{
