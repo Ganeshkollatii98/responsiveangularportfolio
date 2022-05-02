@@ -91,7 +91,8 @@ export class RootDataService {
           description:
         "",
           date: "2016 - 2020 Passed Out",
-          icon: "building-columns",
+          icon: "graduation-cap",
+          
           type:"University"
         },
         {
@@ -115,7 +116,7 @@ export class RootDataService {
           description:
             "",
           date: "2013 - 2014",
-          icon: "school",
+          icon: "school-flag",
           type:"School"
         },
       ]
