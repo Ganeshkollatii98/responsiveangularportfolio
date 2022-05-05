@@ -47,13 +47,17 @@
     <div class="description">
       {{ project.description }}
     </div>
+    <!-- Teck Stack -->
+    <div class="teck-stack">
+      stack: <span>{{project.techStack}}</span>
+    </div>
     <!-- icons -->
     <div class="project-icons">
       <!-- icon1 live link -->
       <a href="{{project.sourceCodeURL}}/" target="_black"> <i class="icon fa-brands fa-github"></i></a>
 
       <!-- icon2 github -->
-     <a href="#"><i class="icon fa-solid fa-globe"></i></a> 
+     <a *ngIf="project.liveURL!==''" href="{{project.liveURL}}/" target="_black"><i class="icon fa-solid fa-globe"></i></a> 
 
     </div>
   </div>
