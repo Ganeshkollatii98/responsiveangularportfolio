@@ -243,52 +243,19 @@ export class RootDataService {
           ],
         },
         {
-          title: 'Save Your Expenses',
+          title: 'Excel Graph Detactive',
           experienceType: 'Personal Project',
           description:
-            'Save your expenses, with the help of this application we can easliy track our daily expenses for every year.',
-          techStack:'React,css',
+            'Developed features with Two-way data binding properties for sheets cells with CRUD operations sync across multiple sheets. Implemented Cycle Detection Algorithm in Directed Graph to detect cycles in cell formulas Applied Depth First Search Algorithm to trace cycles with colored code on cycle path',
+          techStack:'Javascript,Html,css',
           sourceCodeURL:
-            'https://github.com/Ganeshkollatii98/new.reactexpensechart.com',
-          liveURL: 'https://saveexpenses.netlify.com',
+            'https://github.com/Ganeshkollatii98/Excel-Sheet-Web',
+          liveURL: 'https://excelgraphdetective.netlify.app/',
           images: [
             {
               type: 'image',
-              imageUrl: '../../../../assets/projects/expenses/1.PNG',
+              imageUrl: '../../../../assets/projects/excelSheet/1.PNG',
               imageAlt: 'Home Page',
-            },
-            {
-              type: 'image',
-              imageUrl: '../../../../assets/projects/expenses/2.PNG',
-              imageAlt: 'Login Page',
-            },
-            {
-              type: 'image',
-              imageUrl: '../../../../assets/projects/expenses/3.PNG',
-              imageAlt: 'Registration Page',
-            },
-            {
-              type: 'image',
-              imageUrl: '../../../../assets/projects/expenses/4.PNG',
-              imageAlt: 'Menu Page',
-            },
-            {
-              type: 'image',
-              imageUrl: '../../../../assets/projects/expenses/5.PNG',
-              imageAlt: 'Menu Page Filters',
-            },
-            {
-              type: 'image',
-              imageUrl: '../../../../assets/projects/expenses/6.PNG',
-              imageAlt: 'Cart Page Empty',
-            },
-            {
-              video: {
-                type: 'video',
-                videoUrl:
-                  '../../../../assets/projects/expenses/saveexpenses.mp4',
-                videoAlt: 'Save Expenses',
-              },
             },
           ],
         }
