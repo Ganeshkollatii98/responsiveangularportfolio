@@ -242,6 +242,56 @@ export class RootDataService {
             },
           ],
         },
+        {
+          title: 'Save Your Expenses',
+          experienceType: 'Personal Project',
+          description:
+            'Save your expenses, with the help of this application we can easliy track our daily expenses for every year.',
+          techStack:'React,css',
+          sourceCodeURL:
+            'https://github.com/Ganeshkollatii98/new.reactexpensechart.com',
+          liveURL: 'https://saveexpenses.netlify.com',
+          images: [
+            {
+              type: 'image',
+              imageUrl: '../../../../assets/projects/expenses/1.PNG',
+              imageAlt: 'Home Page',
+            },
+            {
+              type: 'image',
+              imageUrl: '../../../../assets/projects/expenses/2.PNG',
+              imageAlt: 'Login Page',
+            },
+            {
+              type: 'image',
+              imageUrl: '../../../../assets/projects/expenses/3.PNG',
+              imageAlt: 'Registration Page',
+            },
+            {
+              type: 'image',
+              imageUrl: '../../../../assets/projects/expenses/4.PNG',
+              imageAlt: 'Menu Page',
+            },
+            {
+              type: 'image',
+              imageUrl: '../../../../assets/projects/expenses/5.PNG',
+              imageAlt: 'Menu Page Filters',
+            },
+            {
+              type: 'image',
+              imageUrl: '../../../../assets/projects/expenses/6.PNG',
+              imageAlt: 'Cart Page Empty',
+            },
+            {
+              video: {
+                type: 'video',
+                videoUrl:
+                  '../../../../assets/projects/expenses/saveexpenses.mp4',
+                videoAlt: 'Save Expenses',
+              },
+            },
+          ],
+        }
         // Add New Projects here
       ],
     },
