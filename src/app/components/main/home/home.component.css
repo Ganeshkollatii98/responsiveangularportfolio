@@ -41,13 +41,15 @@
   max-width: 40%;
   text-align: center;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .home-img img {
   height: 400px;
 
 }
 
-.home-img:after {
+/* .home-img:after {
   content: "";
   position: absolute;
   width: 80px;
@@ -66,7 +68,7 @@
   left: 20px;
   border-top: 10px solid var(--skin-color);
   border-left: 10px solid var(--skin-color);
-}
+} */
 
 h3.name {
   font-family: "Clicker Script";

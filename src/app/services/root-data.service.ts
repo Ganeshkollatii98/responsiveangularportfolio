@@ -26,8 +26,8 @@ export class RootDataService {
     about: {
       title: 'About Me',
       content: `
-      I'm Ganesh Kollati, a web developer from Andhra Pradesh, INDIA. I Studied at ITM University Gwalior (M.P)
-       as a Graduate student in Bachelors of Computer Science Engineering. I hold 1 year experience as a Software Engineer
+       I'm Ganesh Kollati, a web developer from Andhra Pradesh, INDIA. I Studied at ITM University Gwalior (M.P)
+       as a Graduate student in Bachelors of Computer Science Engineering. I hold ${calculateExperience(new Date("2020-08-01"))} year experience as a Software Engineer
        where I design and build apps for devices, big and small. I try to learn a new skill every day. I'm honest, communicable,
        responsible and always ready to work on something new.`,
       personalInfo: {
@@ -275,4 +275,14 @@ export class RootDataService {
     },
   };
   constructor() {}
+ 
+}
+
+export let  calculateExperience=(startDate:any) =>{
+  let endDate:any = new Date();
+  let difference = endDate - startDate;
+  let millisecondsInYear = 1000 * 60 * 60 * 24 * 365.25; 
+  let yearsOfExperience = difference / millisecondsInYear;
+  yearsOfExperience = parseFloat(yearsOfExperience.toFixed(1));
+  return yearsOfExperience;
 }

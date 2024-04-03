@@ -27,11 +27,8 @@ export class AboutComponent implements OnInit {
     this.aboutTitle = this.rootService.data.about.title;
     this.personalInfo = this.rootService.data.about.personalInfo;
     this.skillsList = this.rootService.data.about.skills;
-    
-
   }
   ngDoCheck(){
     this.isSectionOpenWhenToggleClciked=this.asideHelperService.sideNavBarStatus;
-
   }
 }
