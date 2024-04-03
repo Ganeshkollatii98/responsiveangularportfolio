@@ -157,6 +157,9 @@ h3.my-profission {
   
   
 }
+.home-img img{
+  border-radius: .5rem;
+}
 
 /* google
  background-image: linear-gradient(darkgray 50%, add4b39 50%); */
